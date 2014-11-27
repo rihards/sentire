@@ -85,7 +85,7 @@ html {
 
 /* line 31, sass/_reset.scss */
 body {
-  background: #fff;
+  background: #FCFCFC;
   /* Fallback for when there is no custom background color defined. */
 }
 
@@ -158,7 +158,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: Ubuntu, sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -676,6 +676,12 @@ a:hover, a:focus, a:active {
 /*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
+/* line 1, sass/layout/_content-nosidebar.scss */
+.site {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
