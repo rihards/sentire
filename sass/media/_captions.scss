@@ -1,13 +1,18 @@
 .wp-caption {
-	margin-bottom: 1.5em;
 	max-width: 100%;
+  position: relative;
 
 	img[class*="wp-image-"] {
 		@include center-block;
 	}
 
 	.wp-caption-text {
-		margin: 0.8075em 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 0.5em;
+    color: #eee;
+    left:0;
+    padding: 0.3em 0.8em;
+    position: absolute;
 	}
 }
 
