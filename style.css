@@ -681,7 +681,7 @@ a:hover, a:focus, a:active {
 .site {
   max-width: 934px;
   margin: 0 auto;
-  padding: 1em;
+  padding: 0 1em 1em;
 }
 
 /* line 1, sass/site/_header.scss */
