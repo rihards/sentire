@@ -157,7 +157,7 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
+  color: #999999;
   font-family: Ubuntu, sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
@@ -460,15 +460,16 @@ textarea {
 --------------------------------------------------------------*/
 /* line 1, sass/navigation/_links.scss */
 a {
-  color: royalblue;
+  color: #999999;
+  transition: color 0.4s ease-in-out 0s;
 }
-/* line 4, sass/navigation/_links.scss */
+/* line 5, sass/navigation/_links.scss */
 a:visited {
-  color: purple;
+  color: #999999;
 }
-/* line 7, sass/navigation/_links.scss */
+/* line 8, sass/navigation/_links.scss */
 a:hover, a:focus, a:active {
-  color: midnightblue;
+  color: #000000;
 }
 
 /*--------------------------------------------------------------
@@ -680,6 +681,16 @@ a:hover, a:focus, a:active {
 .site {
   max-width: 900px;
   margin: 0 auto;
+}
+
+/* line 1, sass/site/_header.scss */
+.site-header {
+  margin: 1em 0;
+}
+/* line 5, sass/site/_header.scss */
+.site-header .site-branding .site-title a {
+  text-decoration: none;
+  font-size: 1.1em;
 }
 
 /*--------------------------------------------------------------
