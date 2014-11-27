@@ -119,7 +119,7 @@ function sentire_entry_footer() {
 		echo '</span>';
 	}
 
-	edit_post_link( __( 'Edit', 'sentire' ), '<span class="edit-link">', '</span>' );
+	edit_post_link( __( 'Edit', 'sentire' ), '<span class="meta-divider">/</span> <span class="edit-link">', '</span>' );
 }
 endif;
 
