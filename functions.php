@@ -38,10 +38,15 @@ function sentire_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	add_theme_support( 'post-thumbnails' );
+	//add_theme_support( 'post-thumbnails' );
 
 	// We also need a custom size
 	add_image_size( 'post-photo', 900, 9999 ); 
+
+	// Change the default image size
+	update_option( 'image_default_align', 'none' );
+	update_option( 'image_default_link_type', 'none' );
+	update_option( 'image_default_size', 'post-photo' );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -74,6 +79,15 @@ function sentire_setup() {
 }
 endif; // sentire_setup
 add_action( 'after_setup_theme', 'sentire_setup' );
+
+// We should add the new size to the Media tools
+function sentire_custom_sizes( $sizes ) {
+	return array_merge( $sizes, array(
+		'post-photo' => __( 'Post Photo' ),
+	) );
+}
+add_filter( 'image_size_names_choose', 'sentire_custom_sizes' );
+
 
 /**
  * Register widget area.
