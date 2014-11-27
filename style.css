@@ -703,7 +703,7 @@ a:hover, a:focus, a:active {
 
 /* line 5, sass/site/primary/_posts-and-pages.scss */
 .hentry {
-  margin: 0 0 1.5em;
+  margin: 0 0 2.5em;
 }
 
 /* line 9, sass/site/primary/_posts-and-pages.scss */
@@ -722,13 +722,26 @@ a:hover, a:focus, a:active {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0;
+  margin: 0;
 }
 
 /* line 25, sass/site/primary/_posts-and-pages.scss */
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
+}
+
+/* line 30, sass/site/primary/_posts-and-pages.scss */
+.entry-footer {
+  border-top: 1px solid #ececec;
+  margin-top: 0.8em;
+  padding-top: 0.4em;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+/* line 36, sass/site/primary/_posts-and-pages.scss */
+.entry-footer .entry-title {
+  display: inline;
 }
 
 /*--------------------------------------------------------------
@@ -796,8 +809,8 @@ object {
 --------------------------------------------------------------*/
 /* line 1, sass/media/_captions.scss */
 .wp-caption {
-  margin-bottom: 1.5em;
   max-width: 100%;
+  position: relative;
 }
 /* line 5, sass/media/_captions.scss */
 .wp-caption img[class*="wp-image-"] {
@@ -806,10 +819,15 @@ object {
 }
 /* line 9, sass/media/_captions.scss */
 .wp-caption .wp-caption-text {
-  margin: 0.8075em 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  bottom: 0.5em;
+  color: #eee;
+  left: 0;
+  padding: 0.3em 0.8em;
+  position: absolute;
 }
 
-/* line 14, sass/media/_captions.scss */
+/* line 19, sass/media/_captions.scss */
 .wp-caption-text {
   text-align: center;
 }

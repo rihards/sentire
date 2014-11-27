@@ -3,7 +3,7 @@
 }
 
 .hentry {
-	margin: 0 0 1.5em;
+	margin: 0 0 2.5em;
 }
 
 .byline,
@@ -19,10 +19,21 @@
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	margin: 0;
 }
 
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.entry-footer {
+  border-top: 1px solid #ececec;
+  margin-top: 0.8em;
+  padding-top: 0.4em;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  .entry-title {
+    display: inline;
+  }
 }
