@@ -45,7 +45,7 @@ function sentire_setup() {
 
 	// Change the default image size
 	update_option( 'image_default_align', 'none' );
-	update_option( 'image_default_link_type', 'none' );
+	update_option( 'image_default_link_type', 'post' );
 	update_option( 'image_default_size', 'post-photo' );
 
 	// This theme uses wp_nav_menu() in one location.
