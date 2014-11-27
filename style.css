@@ -679,8 +679,9 @@ a:hover, a:focus, a:active {
 --------------------------------------------------------------*/
 /* line 1, sass/layout/_content-nosidebar.scss */
 .site {
-  max-width: 900px;
+  max-width: 934px;
   margin: 0 auto;
+  padding: 1em;
 }
 
 /* line 1, sass/site/_header.scss */
