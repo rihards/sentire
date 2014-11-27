@@ -742,7 +742,7 @@ a:hover, a:focus, a:active {
 }
 /* line 36, sass/site/primary/_posts-and-pages.scss */
 .entry-footer .entry-title {
-  display: inline;
+  display: none;
 }
 
 /*--------------------------------------------------------------

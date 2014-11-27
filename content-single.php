@@ -18,7 +18,6 @@
 
 	<footer class="entry-footer entry-meta">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		<span class="meta-divider">/</span>
 		<?php sentire_posted_on(); ?>
 		<?php sentire_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
